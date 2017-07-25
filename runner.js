@@ -1,12 +1,14 @@
 /**
 * Application Bootstrap for The Box
 */
+const path = require('path');
 const Application = require('./lib/Application');
+
 const CONFIGURATION = {
-	idDev: process.argv[2] === 'dev' || process.env.NODE_ENV === 'development',
+	isDev: process.argv[2] === 'dev' || process.env.NODE_ENV === 'development',
 	rootApplicationHtml: path.join(__dirname, 'app', 'index.html'),
-	entrypointCss: ['style/module.scss'].map((path) => path.resolve(__dirname, path)),
-	entrypointJs: ['app/app.js'].map((path) => path.resolve(__dirname, path)),
+	entrypointCss: ['style/module.scss'].map((file) => path.resolve(__dirname, file)),
+	entrypointJs: ['app/app.js'].map((file) => path.resolve(__dirname, file)),
 	// raspberry PI 3.5 INCH
 	screenSize: {
 		width: 480,
