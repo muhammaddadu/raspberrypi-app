@@ -4,7 +4,7 @@
   "description": "Raspberry PI Application using Electron",
   "main": "index.js",
   "dependencies": {
-    "electron": "1.6.9",
+    "electron": "1.6.9"
   },
   "scripts": {
     "start": "electron runner.js",
