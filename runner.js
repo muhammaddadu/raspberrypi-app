@@ -6,7 +6,7 @@ const Application = require('./lib/Application');
 
 const CONFIGURATION = {
 	isDev: process.argv[2] === 'dev' || process.env.NODE_ENV === 'development',
-	rootApplicationHtml: path.join(__dirname, 'app', 'index.html'),
+	rootApplicationHtml: path.join(__dirname, 'index.html'),
 	entrypointCss: ['style/module.scss'].map((file) => path.resolve(__dirname, file)),
 	entrypointJs: ['app/app.js'].map((file) => path.resolve(__dirname, file)),
 	// raspberry PI 3.5 INCH
