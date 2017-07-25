@@ -7,6 +7,7 @@ const CONFIGURATION = {
 	rootApplicationHtml: path.join(__dirname, 'app', 'index.html'),
 	entrypointCss: ['style/module.scss'].map((path) => path.resolve(__dirname, path)),
 	entrypointJs: ['app/app.js'].map((path) => path.resolve(__dirname, path)),
+	// raspberry PI 3.5 INCH
 	screenSize: {
 		width: 480,
 		height: 320
