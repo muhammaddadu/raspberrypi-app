@@ -4,11 +4,13 @@
   "description": "Raspberry PI Application using Electron",
   "main": "index.js",
   "dependencies": {
-    "electron": "1.6.9"
+    "electron": "1.6.9",
+    "node-sass": "^4.5.3"
   },
   "scripts": {
     "start": "electron runner.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node-sass-build": "node-sass",
+    "node-sass-watch": "node-sass --watch --source-map true --source-map-contents sass --recursive --output css"
   },
   "repository": {
     "type": "git",
